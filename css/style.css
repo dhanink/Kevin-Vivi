@@ -78,6 +78,7 @@ h3,
 h4,
 h5,
 h6,
+h7,
 figure {
   color: #000;
   font-family: "Work Sans", Arial, sans-serif;
@@ -120,8 +121,8 @@ figure {
 }
 .fh5co-nav #fh5co-logo {
   display: flex;
-  /* align-items: left; */
-  /* justify-content: right; */
+  /* align-items: center; */
+  justify-content: center;
   white-space: nowrap;
   font-size: 40px;
   margin: 0;
@@ -129,27 +130,27 @@ figure {
   line-height: 40px;
   font-family: Great Vibes, Arial, serif;
 }
-.fh5co-nav a {
+/* .fh5co-nav a {
   padding: 5px 10px;
   color: #fff;
-}
+} */
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1,
   .fh5co-nav .menu-2 {
     display: none;
   }
 }
-.fh5co-nav ul {
+/* .fh5co-nav ul {
   padding: 0;
   margin: 2px 0 0 0;
-}
-.fh5co-nav ul li {
+} */
+/* .fh5co-nav ul li {
   padding: 0;
   margin: 0;
   list-style: none;
   display: inline;
-}
-.fh5co-nav ul li a {
+} */
+/* .fh5co-nav ul li a {
   font-size: 14px;
   padding: 30px 10px;
   text-transform: uppercase;
@@ -157,16 +158,16 @@ figure {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-}
-.fh5co-nav ul li a:hover,
+} */
+/* .fh5co-nav ul li a:hover,
 .fh5co-nav ul li a:focus,
 .fh5co-nav ul li a:active {
   color: white;
-}
-.fh5co-nav ul li.has-dropdown {
+} */
+/* .fh5co-nav ul li.has-dropdown {
   position: relative;
-}
-.fh5co-nav ul li.has-dropdown .dropdown {
+} */
+/* .fh5co-nav ul li.has-dropdown .dropdown {
   width: 130px;
   -webkit-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
@@ -187,8 +188,8 @@ figure {
   -webkit-transition: 0s;
   -o-transition: 0s;
   transition: 0s;
-}
-.fh5co-nav ul li.has-dropdown .dropdown:before {
+} */
+/* .fh5co-nav ul li.has-dropdown .dropdown:before {
   bottom: 100%;
   left: 40px;
   border: solid transparent;
@@ -200,33 +201,33 @@ figure {
   border-bottom-color: #fff;
   border-width: 8px;
   margin-left: -8px;
-}
-.fh5co-nav ul li.has-dropdown .dropdown li {
+} */
+/* .fh5co-nav ul li.has-dropdown .dropdown li {
   display: block;
   margin-bottom: 7px;
-}
-.fh5co-nav ul li.has-dropdown .dropdown li:last-child {
+} */
+/* .fh5co-nav ul li.has-dropdown .dropdown li:last-child {
   margin-bottom: 0;
-}
-.fh5co-nav ul li.has-dropdown .dropdown li a {
+} */
+/* .fh5co-nav ul li.has-dropdown .dropdown li a {
   padding: 2px 0;
   display: block;
   color: #999999;
   line-height: 1.2;
   text-transform: none;
   font-size: 15px;
-}
-.fh5co-nav ul li.has-dropdown .dropdown li a:hover {
+} */
+/* .fh5co-nav ul li.has-dropdown .dropdown li a:hover {
   color: #000;
-}
-.fh5co-nav ul li.has-dropdown:hover a,
+} */
+/* .fh5co-nav ul li.has-dropdown:hover a,
 .fh5co-nav ul li.has-dropdown:focus a {
   color: #fff;
-}
-.fh5co-nav ul li.btn-cta a {
+} */
+/* .fh5co-nav ul li.btn-cta a {
   color: #f14e95;
-}
-.fh5co-nav ul li.btn-cta a span {
+} */
+/* .fh5co-nav ul li.btn-cta a span {
   background: #fff;
   padding: 4px 20px;
   display: -moz-inline-stack;
@@ -240,15 +241,15 @@ figure {
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
   border-radius: 100px;
-}
-.fh5co-nav ul li.btn-cta a:hover span {
+} */
+/* .fh5co-nav ul li.btn-cta a:hover span {
   -webkit-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
-}
-.fh5co-nav ul li.active > a {
+} */
+/* .fh5co-nav ul li.active > a {
   color: #fff !important;
-}
+} */
 
 /* #fh5co-counter, */
 #fh5co-event,
@@ -324,14 +325,14 @@ figure {
 }
 
 .fh5co-cover {
-  min-height: 100vh;
+  height: 100%;
   display: flex;
   background-size: cover;
   background-position: center;
   /* align-items: center; */
   background-repeat: no-repeat;
   position: relative;
-  width: 110%;
+  /* width: 100vw; */
 }
 .fh5co-cover .overlay {
   z-index: 0;
@@ -864,9 +865,11 @@ form label {
 }
 #fh5co-header .display-tc h1,
 #fh5co-header .display-tc h2,
+#fh5co-header .display-tc h7,
 /* #fh5co-counter .display-tc h1, */
 /* #fh5co-counter .display-tc h2, */
 .fh5co-cover .display-tc h1,
+.fh5co-cover .display-tc h7,
 .fh5co-cover .display-tc h2 {
   margin: 0;
   padding: 0;

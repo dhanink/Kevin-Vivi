@@ -134,7 +134,7 @@ figure {
   border-radius: 50%;
   animation: glow-grow 5s ease-out infinite;
   transform: scale(1);
-  animation: pulse 2s infinite;
+/*   animation: pulse 2s infinite; */
 }
 
 @keyframes glow-grow {

@@ -26,6 +26,7 @@ body {
   line-height: 1.7;
   color: #828282;
   background: #fff;
+  /* overflow: hidden; */
 }
 
 #page {
@@ -125,6 +126,10 @@ figure {
   color: white;
   font-size: 3vh;
 }
+
+/* .open-inv.onclick {
+  overflow: scroll;
+} */
 
 /* .icon-vinyl {
   border-radius: 50%;

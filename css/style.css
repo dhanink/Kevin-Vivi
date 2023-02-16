@@ -125,37 +125,37 @@ figure {
   text-decoration: none;
   color: white;
   font-size: 3vh;
-}
-
-/* .open-inv.onclick {
-  overflow: scroll;
-} */
-
-/* .icon-vinyl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "";
+  top: 0%;
+  left: 0%;
   border-radius: 50%;
-  margin: 10px;
-  height: 50px;
-  width: 50px;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  animation: glow-grow 5s ease-out infinite;
   transform: scale(1);
   animation: pulse 2s infinite;
-} */
+}
 
-@keyframes pulse {
+@keyframes glow-grow {
   0% {
+    opacity: 0;
     transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
   }
 
   70% {
+    opacity: 1;
     transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
   }
 
   100% {
+    opacity: 2;
     transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
+}
+
+.open-inv.hover {
+  color: #d43f3a;
 }
 
 @media screen and (max-width: 768px) {
@@ -376,6 +376,7 @@ figure {
   /* align-items: center; */
   background-repeat: no-repeat;
   position: relative;
+  /* white-space: nowrap; */
   /* width: 100vw; */
 }
 .fh5co-cover .overlay {
@@ -393,7 +394,8 @@ figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    height: 600px;
+    height: 100vh;
+    white-space: nowrap;
   }
 }
 .fh5co-cover .display-t,
@@ -1738,9 +1740,9 @@ form label {
   border-bottom: none !important;
 } */
 @media screen and (max-width: 768px) {
-  .fh5co-nav-toggle {
+  /* .fh5co-nav-toggle {
     display: block;
-  }
+  } */
 }
 
 .btn {

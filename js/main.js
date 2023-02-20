@@ -3,6 +3,18 @@
 //   open - inv.classList.toggle("onclick");
 // };
 
+function myFunction() {
+  var x = document.getElementById("acara");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  document
+    .querySelector(".acara, .fh5co-event")
+    .scrollIntoView({ behavior: "smooth" });
+}
+
 (function () {
   "use strict";
 

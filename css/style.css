@@ -58,7 +58,23 @@ body {
 
 /* button start */
 
+button {
+  /* padding: 0.5rem 1%; */
+  background-color: #ffffff00;
+  align-items: center;
+  text-align: center;
+  line-height: auto;
+  color: #ffffff;
+  outline: none;
+  /* text-shadow: -1px -1px 0 #ffffff00, 1px -1rgba (0, 0, 0, 0) #ffffff00,
+    -1px 1rgba (0, 0, 0, 0) #ffffff00, 1px 1px 0 #ffffff00; */
+}
+
 /* button end */
+
+#acara #fh5co-event #fh5co-footer {
+  display: none;
+}
 
 a {
   color: #f14e95;
